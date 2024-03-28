@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
@@ -15,9 +15,12 @@ const Home = () => {
             I am a UX Designer / Frontend Developer Based in India
           </h2>
 
-          <button className=" text-slate-900 dark:text-white border-2 border-gray-300 rounded-xl  text-base py-5 px-4 my-10 hover:transition hover:duration-300 hover:transform hover:scale-110">
+          <Link
+            to="/contact"
+            className="inline-block text-slate-900 dark:text-white border-2 border-gray-300 rounded-xl text-base py-5 px-4 my-10 hover:transition hover:duration-300 hover:transform hover:scale-110"
+          >
             Contact me
-          </button>
+          </Link>
           <div className="flex space-x-5 ">
             <a href="https://twitter.com/Omwankh99942718" target="_blank">
               <img
@@ -47,9 +50,12 @@ const Home = () => {
         </div>
         <div className="flex justify-center ">
           <button className="animate-bounce-slow ">
-            <h3 className="text-slate-500 dark:text-white pt-4 hover:transition duration-300 transform hover:scale-125 shadow-md hover:shadow-lg rounded-md px-4 py-2">
+            <Link
+              to="/portfolio"
+              className="inline-block text-slate-500 dark:text-white pt-4 hover:transition duration-300 transform hover:scale-125 shadow-md hover:shadow-lg rounded-md px-4 py-2"
+            >
               Projects <img src="/Down.png" alt="" className="ml-4 w-5" />
-            </h3>
+            </Link>
           </button>
         </div>
       </div>
