@@ -1,11 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class",
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-  theme: {
-    extend: {},
-  },
-
-  plugins: [],
-};
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+});
