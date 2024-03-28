@@ -106,9 +106,14 @@ const Porfolio = () => {
                   </li>
                 </div>
                 <div className="card-actions justify-end">
-                  <button className=" text-slate-900 dark:text-white btn btn-primary">
-                    see
-                  </button>
+                  <a
+                    href="https://trendifyecommerce.netlify.app"
+                    target="_blank"
+                  >
+                    <button className=" text-slate-900 dark:text-white btn btn-primary">
+                      Visit
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -138,7 +143,7 @@ const Porfolio = () => {
                 </div>
                 <div className="card-actions justify-end">
                   <button className=" text-slate-900 dark:text-white btn btn-primary">
-                    see
+                    Visit
                   </button>
                 </div>
               </div>
